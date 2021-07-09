@@ -1,7 +1,7 @@
 {
   "name": "device-memory",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple express middleware to get the client device memory.",
   "main": "index.js",
   "author": "ClientCrash",
   "license": "MIT",
