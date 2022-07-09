@@ -3,6 +3,10 @@
   "version": "1.0.1",
   "description": "A simple express middleware to get the client device memory.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClientCrash/device-memory.git"
+  },
   "author": "ClientCrash",
   "license": "MIT",
   "keywords": ["express","middleware","device","memory"]
