@@ -1,7 +1,7 @@
-function deviceMemory(req, res,next){
-req.deviceMemory = req.headers['Device-Memory']
-if(req.deviceMemory==undefined){req.deviceMemory=-1}
-if(req.deviceMemory>8){req.deviceMemory=8}
-next()
+const deviceMemory = (req, res, next) => {
+    const deviceMemory = req.headers['device-memory'];
+    req.deviceMemory = deviceMemory === undefined ? -1 : Math.min(Number(deviceMemory), 8);
+    next();
 }
-module.exports = deviceMemory
+
+export default deviceMemory;
